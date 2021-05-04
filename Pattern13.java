@@ -9,6 +9,7 @@ public class Pattern13
         int n = scn.nextInt();
 
         firstApproach(n);
+        secondApproach(n);
     }
     public static void firstApproach(int n)
     {
@@ -40,5 +41,23 @@ public class Pattern13
             count *= i;
         }
         return count;
+    }
+
+    public static void secondApproach(int n)
+    {
+        // by ncr+1 = ncr*(n-r)/r+1
+
+        for(int i=0;i<n;i++)
+        {
+            int val = 1;
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print(val+"\t");
+                int t = i-j;
+                //  t = t == 0 ? 1 : t;
+                val = val*t/(j+1);
+            }
+            System.out.println("");
+        }
     }
 }
