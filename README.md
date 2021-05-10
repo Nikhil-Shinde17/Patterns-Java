@@ -178,6 +178,10 @@
 * ### * -- * -- * -- * -- * -- * -- *	
 ---
 ## Pattern24
-![Swastika](./swas.png)
+![Swastika](./swast.png)
+
 --- 
 ## Pattern25
+![W](./w.png)
+
+*******
